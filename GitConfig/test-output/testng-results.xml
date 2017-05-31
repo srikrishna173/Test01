@@ -2,26 +2,15 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="556" started-at="2017-05-31T12:12:55Z" finished-at="2017-05-31T12:12:56Z">
+  <suite name="Default suite" duration-ms="47" started-at="2017-05-31T12:52:49Z" finished-at="2017-05-31T12:52:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="556" started-at="2017-05-31T12:12:55Z" finished-at="2017-05-31T12:12:56Z">
+    <test name="Default test" duration-ms="47" started-at="2017-05-31T12:52:49Z" finished-at="2017-05-31T12:52:49Z">
       <class name="GitConfiguration.GitTest">
-        <test-method status="FAIL" signature="launchURL()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="launchURL" is-config="true" duration-ms="0" started-at="2017-05-31T17:42:55Z" finished-at="2017-05-31T17:42:55Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: \\GitRepo\GitConfig\src\test\resources\chromedriver.exe]]>
-            </message>
+        <test-method status="FAIL" signature="launchURL()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="launchURL" is-config="true" duration-ms="0" started-at="2017-05-31T18:22:49Z" finished-at="2017-05-31T18:22:49Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: \\GitRepo\GitConfig\src\test\resources\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+              <![CDATA[java.lang.NullPointerException
 	at GitConfiguration.GitTest.launchURL(GitTest.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -52,25 +41,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method status="SKIP" signature="gitTest()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="gitTest" duration-ms="0" started-at="2017-05-31T17:42:56Z" finished-at="2017-05-31T17:42:56Z">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: \\GitRepo\GitConfig\src\test\resources\chromedriver.exe]]>
-            </message>
+        <test-method status="SKIP" signature="gitTest()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="gitTest" duration-ms="0" started-at="2017-05-31T18:22:49Z" finished-at="2017-05-31T18:22:49Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: \\GitRepo\GitConfig\src\test\resources\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+              <![CDATA[java.lang.NullPointerException
 	at GitConfiguration.GitTest.launchURL(GitTest.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -101,11 +79,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gitTest -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-05-31T17:42:56Z" finished-at="2017-05-31T17:42:56Z">
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:GitConfiguration.GitTest@71423665]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-05-31T18:22:49Z" finished-at="2017-05-31T18:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
