@@ -14,7 +14,8 @@ public class GitTest {
 	public void launchURL() {
 		
 		//String Chromepath = Thread.currentThread().getContextClassLoader().getResource("chromedriver.exe").getPath();
-		System.setProperty("webdriver.chrome.driver", "/GitRepo/GitConfig/src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "/GitRepo/GitConfig/src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",Thread.currentThread().getContextClassLoader().getResource("chromedriver.exe").getFile());
 		driver = new ChromeDriver();
 		driver.get("http://localhost:8080/");
 	}
