@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,10 +23,13 @@ public class GitTest {
 		
 		//String Chromepath = Thread.currentThread().getContextClassLoader().getResource("chromedriver.exe").getPath();
 		//System.setProperty("webdriver.chrome.driver", "/GitRepo/GitConfig/src/test/resources/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", classloader("chromedriver.exe"));
+		//System.setProperty("webdriver.chrome.driver", classloader("chromedriver.exe"));
 		
+		
+		System.setProperty("webdriver.ie.driver", classloader("IEDriverServer.exe"));
 		//‪C:\Users\srikrishna.jena\Downloads\Firefox Setup Stub 53.0.3.exe
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
+		driver = new InternetExplorerDriver();
 		
 //		File pathBinary = new File("C:/Users/srikrishna.jena/Downloads/Firefox Setup Stub 53.0.3.exe");
 //		FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);
